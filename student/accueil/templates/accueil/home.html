@@ -1,0 +1,218 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenue à Niakhar</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f8f2;
+            color: #333;
+        }
+
+        header {
+            background-color: #176b3a;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+       
+
+        nav {
+            background-color: #104d2a;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+         nav a:hover {
+    color: #f5d76e;
+    text-decoration: underline;
+        }
+
+        .accueil {
+            text-align: center;
+            padding: 70px 20px;
+            background-color: #dcefdc;
+        }
+
+        .accueil h2 {
+            color: #176b3a;
+            font-size: 32px;
+        }
+
+        .contenu {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .cartes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.carte img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+        .carte {
+            background: white;
+            padding: 25px;
+            width: 220px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px #ccc;
+        }
+
+        footer {
+            background-color: #104d2a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Bienvenue à Niakhar</h1>
+        <p>À la découverte de notre beau village</p>
+    </header>
+
+    <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#apropos">À propos</a>
+    <a href="#histoire">Histoire</a>
+    <a href="#population">Population</a>
+    <a href="#activites">Nos activités</a>
+    <a href="#galerie">Galerie</a>
+    <a href="#richesses">Nos richesses</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+    <section class="accueil" id="accueil">
+    <h2>Découvrez Niakhar</h2>
+
+    <p>Un village riche en culture, en traditions et en histoire.</p>
+
+    <img src="{% static 'images/niakhar.png' %}"
+    
+     alt="Vie quotidienne à Niakhar"
+     width="80%">
+</section>
+<section class="contenu" id="histoire">
+    <h2>Histoire de Niakhar</h2>
+    <p>
+        Niakhar est une localité du Sénégal, riche de son histoire,
+        de ses traditions et de ses valeurs culturelles.
+        Ce site vous invite à découvrir son patrimoine,
+        sa population et la beauté de la vie quotidienne.
+    </p>
+</section>
+
+    <section class="contenu" id="apropos">
+        <h2>À propos de Niakhar</h2>
+        <p>
+            Bienvenue sur notre site consacré à la découverte
+            de Niakhar, un village du Sénégal.
+        </p>
+    </section>
+    <section class="contenu" id="population">
+    <h2>Notre population</h2>
+    <p>
+        La population de Niakhar est connue pour son accueil,
+        sa solidarité et son attachement aux traditions.
+        Les habitants participent activement à la vie
+        sociale, culturelle et économique du village.
+    </p>
+</section>
+<section class="contenu" id="activites">
+    <h2>Nos activités</h2>
+
+    <div class="cartes">
+        <div class="carte">
+            <h3>Agriculture</h3>
+            <p>Une activité importante pour la vie du village.</p>
+        </div>
+
+        <div class="carte">
+            <h3>Commerce</h3>
+            <p>Les habitants participent aux échanges commerciaux.</p>
+        </div>
+
+        <div class="carte">
+            <h3>Élevage</h3>
+            <p>L'élevage contribue à l'économie locale.</p>
+        </div>
+    </div>
+</section>
+<section class="contenu" id="galerie">
+    <h2>Galerie photos de Niakhar</h2>
+    <p>Découvrez notre vie quotidienne, notre culture et nos traditions.</p>
+    <div class="cartes">
+        <div class="carte">
+            <img src="{% static 'images/niakhar.png' %}" width="80%">
+            <h3>Vie quotidienne</h3>
+            <p>La vie des habitants de Niakhar.</p>
+        </div>
+
+        <div class="carte">
+           <img src="{% static 'images/dense.jpg' %}" width="200">
+            <h3>Culture et traditions</h3>
+            <p>Nos danses, nos fêtes et nos coutumes.</p>
+        </div>
+
+        <div class="carte">
+           <img src="{% static 'images/marcher.jpg' %}" width="200">
+            <h3>Marché de Niakhar</h3>
+            <p>Les échanges et les activités commerciales.</p>
+        </div>
+    
+    </div>
+</section>
+
+    <section class="contenu" id="richesses">
+        <h2>Nos richesses</h2>
+
+        <div class="cartes">
+            <div class="carte">
+                <h3>Notre culture</h3>
+                <p>Découvrons nos valeurs culturelles.</p>
+            </div>
+
+            <div class="carte">
+                <h3>Nos traditions</h3>
+                <p>Préservons nos traditions.</p>
+            </div>
+
+            <div class="carte">
+                <h3>Notre environnement</h3>
+                <p>Protégeons notre environnement.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>© 2026 - Découvrir Niakhar | Sénégal</p>
+    </footer>
+
+</body>
+</html>
